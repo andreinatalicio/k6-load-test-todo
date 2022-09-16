@@ -1,13 +1,17 @@
 import http from "k6/http";
 import { check } from "k6";
+import { env } from "./../env.js";
+
+export const options = {
+  vus: env.vus,
+  duration: env.duration,
+};
 
 export default function () {
-  const baseUrl = "http://localhost:3000/api/v1/todos";
-
   const params = {
     headers: {
-      "X-Access-Token": "SvApamX6TMa2SUBfFpx8XeJNTbBQk9SSE9hZ",
-      "Content-Type": "application/json",
+      "X-Access-Token": env.apiToken,
+      "Content-Type": env.contentType,
     },
   };
 
@@ -17,7 +21,7 @@ export default function () {
     },
   });
 
-  const createResponse = http.post(baseUrl, createPayload, params);
+  const createResponse = http.post(env.baseUrl, createPayload, params);
 
   check(createResponse, {
     "status is 200": (response) => response.status === 200,
