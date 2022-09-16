@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint scenarios/",
+    "eslint:fix": "eslint scenarios/ --fix"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/andreinatalicio/load-test-todo#readme",
   "devDependencies": {
+    "eslint": "^8.23.1",
     "k6": "^0.0.0"
   }
 }
