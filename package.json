@@ -1,5 +1,5 @@
 {
-  "name": "load-test-todo",
+  "name": "k6-load-test-todo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreinatalicio/load-test-todo.git"
+    "url": "git+https://github.com/andreinatalicio/k6-load-test-todo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andreinatalicio/load-test-todo/issues"
+    "url": "https://github.com/andreinatalicio/k6-load-test-todo/issues"
   },
-  "homepage": "https://github.com/andreinatalicio/load-test-todo#readme",
+  "homepage": "https://github.com/andreinatalicio/k6-load-test-todo#readme",
   "devDependencies": {
     "eslint": "^8.23.1",
     "k6": "^0.0.0"
